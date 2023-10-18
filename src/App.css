@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  padding-inline-start: 0 !important;
+}
+
+.nav-links a {
+  margin-left: 1rem
+}
+
+.nav-links a:first-child {
+  margin-left: 0;
+}
+
+.formBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}

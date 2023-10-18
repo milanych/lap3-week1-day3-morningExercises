@@ -1,10 +1,10 @@
 import React from "react"
 
-export default function ColorItem({ colors }) {
+export default function ColorItem({ colorsList }) {
     const url = window.location.href;
     const split = (url.split('/'))
 
-    const col = colors.filter(el => el.name.toLowerCase() === split[split.length - 1].replace('%20', ' ').toLowerCase())
+    const col = colorsList.filter(el => el.name.toLowerCase() === split[split.length - 1].replace('%20', ' ').toLowerCase())
 
     const bg = {
       display: 'flex',
@@ -26,4 +26,3 @@ export default function ColorItem({ colors }) {
     </>)
 }
 
-//style={{background-color: ${color.hex} ; height: 20px; width: 20px; padding: 10px; border: 1px solid green;"
